@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Bubble</title>
+</head>
+
+<body>
+
+    <div> 
+        This is a div...
+        <p> 
+            This is a paragraph...
+            <a href="#">This is a link...</a>
+        </p>
+    </div>
+
+    <script>
+        function showTagName() {
+            alert(`You clicked on tag: ${this.tagName}`);
+        }
+
+        document.querySelector('div').addEventListener('click', showTagName);
+        document.querySelector('p').addEventListener('click', showTagName);
+        document.querySelector('a').addEventListener('click', showTagName);
+    </script>
+
+</body>
+
+</html>
